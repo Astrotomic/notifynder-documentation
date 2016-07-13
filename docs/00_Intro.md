@@ -1,1 +1,0 @@
-**Notifynder** is a package for Laravel 5 to manage notifications for you - sending, translating, displaying and so on.
