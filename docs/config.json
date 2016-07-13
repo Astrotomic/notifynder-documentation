@@ -1,0 +1,24 @@
+{
+    "title": "Notifynder Docu",
+    "tagline": "The laravel notification package",
+    "author": "Notifynder Team",
+    "image": "app.png",
+    "live": {
+        "inherit_index": true,
+        "clean_urls": true
+    },
+    "html": {
+        "theme": "daux-blue",
+        "breadcrumbs": true,
+        "breadcrumb_separator": "Chevrons",
+        "toggle_code": true,
+        "date_modified": true,
+        "float": false,
+
+        "links": {
+            "GitHub Repo": "https://github.com/fenos/Notifynder",
+            "Issues": "https://github.com/fenos/Notifynder/issues",
+            "Slack": "https://notifynder.signup.team"
+        }
+    }
+}
