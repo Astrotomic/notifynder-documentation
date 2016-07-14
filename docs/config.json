@@ -16,7 +16,8 @@
         "float": false,
 
         "links": {
-            "GitHub Repo": "https://github.com/fenos/Notifynder",
+            "Demo": "http://demo.notifynder.info",
+            "Repository": "https://github.com/fenos/Notifynder",
             "Issues": "https://github.com/fenos/Notifynder/issues",
             "Slack": "https://notifynder.signup.team"
         }
