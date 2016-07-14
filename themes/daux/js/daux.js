@@ -66,30 +66,6 @@ function setCodeBlockStyle(x) {
     }
 }
 
-//Initialize CodeBlock Visibility Settings
-$(function () {
-    codeBlocks = $('.content-page article > pre');
-    toggleCodeBlockBtn = $('#toggleCodeBlockBtn');
-
-    // If there is no code block we hide the link
-    if (!codeBlocks.size()) {
-        toggleCodeBlockBtn.addClass('hidden');
-        return;
-    }
-
-    codeBlockView = $('.right-column');
-    if (!codeBlockView.size()) return;
-
-    codeBlockState = localStorage.getItem("codeBlockState");
-    if (!codeBlockState) {
-        codeBlockState = 2;
-        localStorage.setItem("codeBlockState", codeBlockState);
-    } else codeBlockState = parseInt(codeBlockState);
-
-    setCodeBlockStyle(codeBlockState);
-});
-
-
 $(function () {
     // Tree navigation
     $('.aj-nav').click(function (e) {

@@ -1,1 +1,0 @@
-How to install and configure this package
