@@ -30,7 +30,15 @@
         </div>
     <?php } ?>
 
-    <?= $page['content']; ?>
+    <?php if(empty($page['content'])) {
+        echo "This is just a placeholder.";
+    } else {
+        echo $page['content'];
+    } ?>
+
+    <hr/>
+
+    <p>If you have something to add pls make a PR in the docu repo: <a href="https://github.com/Notifynder/documentation">https://github.com/Notifynder/documentation</a></p>
 
     <?php if(!empty($page['prev']) || !empty($page['next'])) { ?>
     <nav>
