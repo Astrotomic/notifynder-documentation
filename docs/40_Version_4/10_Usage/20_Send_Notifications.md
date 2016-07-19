@@ -38,3 +38,15 @@ The Notifynder notification builder is callable directly or via the `Notifynder`
         ->expire(Carbon::tomorrow()) // define an expire date for the notification
 })->send(); // send the notification
 ```
+
+### setting custom fields
+
+If you have added some custom fields to the database and want to set them with the builder you can do it with the `setField()` method. To do this the column name must be configured in the `additional_fields` array.
+
+```php
+\Notifynder::category('user.following') // define the category to send
+    ->from($sender) // define the sender of the notification
+    ->to($receiver) // define the receiver of the notification
+    ->setField('customer_id', $customer->getKey()) // set the customer_id field
+    ->send(); // send the notification
+```
