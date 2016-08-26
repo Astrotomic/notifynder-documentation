@@ -1,7 +1,7 @@
 {
     "favicon": "<theme_url>img/favicon.png",
     "css": ["<theme_url>css/theme.min.css"],
-    "fonts": ["/fonts.googleapis.com/css?family=Raleway:100,300,400,500%7CLato:300,400"],
+    "fonts": ["//fonts.googleapis.com/css?family=Raleway:100,300,400,500%7CLato:300,400"],
     "js": ["<theme_url>js/theme.min.js"],
     "variants": {
         "default": {
