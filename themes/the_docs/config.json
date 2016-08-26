@@ -1,0 +1,44 @@
+{
+    "favicon": "<theme_url>img/favicon.png",
+    "css": ["<theme_url>css/theme.min.css"],
+    "fonts": ["/fonts.googleapis.com/css?family=Raleway:100,300,400,500%7CLato:300,400"],
+    "js": ["<theme_url>js/theme.min.js"],
+    "variants": {
+        "default": {
+            "css": ["<theme_url>css/skin-default.min.css"]
+        },
+        "blue": {
+            "css": ["<theme_url>css/skin-blue.min.css"]
+        },
+        "brown": {
+            "css": ["<theme_url>css/skin-brown.min.css"]
+        },
+        "cyan": {
+            "css": ["<theme_url>css/skin-cyan.min.css"]
+        },
+        "dark": {
+            "css": ["<theme_url>css/skin-dark.min.css"]
+        },
+        "gray": {
+            "css": ["<theme_url>css/skin-gray.min.css"]
+        },
+        "orange": {
+            "css": ["<theme_url>css/skin-orange.min.css"]
+        },
+        "pink": {
+            "css": ["<theme_url>css/skin-pink.min.css"]
+        },
+        "purple": {
+            "css": ["<theme_url>css/skin-purple.min.css"]
+        },
+        "red": {
+            "css": ["<theme_url>css/skin-red.min.css"]
+        },
+        "teal": {
+            "css": ["<theme_url>css/skin-teal.min.css"]
+        },
+        "yellow": {
+            "css": ["<theme_url>css/skin-yellow.min.css"]
+        }
+    }
+}

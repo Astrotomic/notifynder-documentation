@@ -116,8 +116,8 @@ class Server
 
         $request = $this->getRequest();
         $request = urldecode($request);
-        if ($request == 'index_page') {
-            $request = $this->daux->tree->getIndexPage()->getUri();
+        if ($request == 'index_page' || $request == 'index') {
+            $request = $this->daux->tree->getFirstPage()->getUrl();
         }
 
         return $this->getPage($request);

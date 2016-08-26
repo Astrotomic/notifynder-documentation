@@ -73,26 +73,45 @@ class Template
         });
     }
 
-    private function renderNavigation($entries)
+    private function renderNavigation($entries, $child = false)
     {
         $nav = "";
+        $active = false;
         foreach ($entries as $entry) {
             if (array_key_exists('children', $entry)) {
                 if (array_key_exists('href', $entry)) {
-                    $link = '<a href="' . $entry['href'] . '" class="folder">' . $entry['title'] . '</a>';
+                    $link = '<a href="' . $entry['href'] . '" class="has-child">' . $entry['title'] . '</a>';
                 } else {
-                    $link = '<a href="#" class="aj-nav folder">' . $entry['title'] . '</a>';
+                    $link = '<a href="#" class="has-child">' . $entry['title'] . '</a>';
                 }
 
-                $link .= $this->renderNavigation($entry['children']);
+                if(strpos($entry['title'], 'Version') === 0) {
+                    $link = '<strong>' . $entry['title'] . '</strong>';
+                    $subnav = $this->renderNavigation($entry['children'], true);
+                    $subnav = substr($subnav, strpos($subnav, '>')+1);
+                    $subnav = substr($subnav, 0, -5);
+                    $link .= $subnav;
+                } else {
+                    $link .= $this->renderNavigation($entry['children'], true);
+                }
             } else {
                 $link = '<a href="' . $entry['href'] . '">' . $entry['title'] . '</a>';
             }
 
+            if(strpos($entry['class'], 'active') !== false) {
+                $active = true;
+            }
             $nav .= "<li class='$entry[class]'>$link</li>";
         }
 
-        return "<ul class='nav nav-list'>$nav</ul>";
+        if($child) {
+            if($active) {
+                return "<ul class='open'>$nav</ul>";
+            }
+            return "<ul>$nav</ul>";
+        } else {
+            return $nav;
+        }
     }
 
     private function buildNavigation(Directory $tree, $path, $current_url, $base_page, $mode)

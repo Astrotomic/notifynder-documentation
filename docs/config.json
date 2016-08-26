@@ -8,9 +8,9 @@
         "clean_urls": true
     },
     "html": {
-        "theme": "daux-blue",
+        "theme": "the_docs-orange",
         "breadcrumbs": true,
-        "breadcrumb_separator": " > ",
+        "breadcrumb_separator": "<span>/</span>",
         "toggle_code": false,
         "date_modified": true,
         "float": false,

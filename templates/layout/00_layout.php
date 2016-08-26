@@ -4,13 +4,21 @@
 <!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <title><?= $page['title']; ?> <?php if ($page['title'] != $params['title']) { echo "- " . $params['title']; } ?></title>
+    <title>
+        <?php
+        echo $page['title'];
+        if ($page['title'] != $params['title']) {
+            echo " - " . $params['title'];
+        }
+        ?>
+    </title>
     <meta name="description" content="<?= $params['tagline']; ?>" />
     <meta name="author" content="<?= $params['author']; ?>">
     <meta charset="UTF-8">
     <link rel="icon" href="<?= $params['theme']['favicon']; ?>" type="image/x-icon">
     <!-- Mobile -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Font -->
@@ -24,10 +32,10 @@
     } ?>
 
     <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
-<body class="<?= $params['html']['float'] ? 'with-float' : ''; ?>">
+<body>
     <?= $this->section('content'); ?>
 
     <?php
@@ -39,19 +47,9 @@
     }
     ?>
 
-
-    <!-- jQuery -->
-    <?= '<script src="' . $base_url . 'themes/daux/js/jquery-1.11.3.min.js' . '"></script>' ?>
-
-    <!-- hightlight.js -->
-    <script src="<?= $base_url; ?>themes/daux/js/highlight.pack.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-
     <!-- JS -->
     <?php foreach ($params['theme']['js'] as $js) {
         echo '<script src="' . $js . '"></script>';
     } ?>
-
-    <script src="<?= $base_url; ?>themes/daux/js/daux.js"></script>
 </body>
 </html>

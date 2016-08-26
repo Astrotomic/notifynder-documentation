@@ -4,7 +4,7 @@
 
 Require the package via composer and download the files: 
 
-```sh
+```
 composer require fenos/notifynder
 ```
 
@@ -25,7 +25,7 @@ Add the following string to `config/app.php`
 
 Publish the migration and the configuration of notifynder with the following command:
 
-```sh
+```
 php artisan vendor:publish --provider="Fenos\Notifynder\NotifynderServiceProvider"
 php artisan migrate
 ```
