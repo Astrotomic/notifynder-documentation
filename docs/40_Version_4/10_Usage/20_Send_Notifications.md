@@ -26,6 +26,19 @@ The Notifynder notification builder is callable directly or via the `Notifynder`
     ->send(); // send the notification
 ```
 
+### extend Notification extra
+
+```php
+\Notifynder::category('user.following') // define the category to send
+    ->anonymous() // force an anonymous notification sender
+    ->to($receiver) // define the receiver of the notification
+    ->url('http://notifynder.info') // define the url for the notification
+    ->extra(['message' => 'Hey John, I\'m Doe.']) // define additional data
+    ->extra(['action' => 'invitation'], false) // extend additional data
+    ->expire(Carbon::tomorrow()) // define an expire date for the notification
+    ->send(); // send the notification
+```
+
 ### multiple Notifications
 
 ```php
