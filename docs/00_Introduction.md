@@ -6,3 +6,5 @@ Notifynder just needs basic things and is compatible with most current versions.
 
 * **PHP**: v5.5 - v7.0
 * **DB**: MySQL, PostgreSQL, SQLite in any laravel compatible version
+
+Lorem Ipsum Dolor
