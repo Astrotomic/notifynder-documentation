@@ -5,3 +5,4 @@ static
 vendor
 composer.lock
 webhook.php
+deploy.php
