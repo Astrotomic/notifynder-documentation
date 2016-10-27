@@ -32,12 +32,13 @@ php artisan migrate
 
 ## Setup your Models
 
-If you want to access the notifications that are send to a model you have to use the Trait.
+If you want to access the notifications that are send to a model you have to use the Trait. For Laravel5.3 you need a different trait `\Fenos\Notifynder\Traits\NotifableLaravel53` it comes with same functionality but the relation method is renamed cause of the conflict with the new internal notification system.
 
 ```php
 namespace App\Models;
 
-use Fenos\Notifynder\Traits\Notifable as NotifableTrait;
+use Fenos\Notifynder\Traits\Notifable as NotifableTrait; // for Laravel 5.0+
+use Fenos\Notifynder\Traits\NotifableLaravel53 as NotifableTrait; // for Laravel 5.3+
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 
 class User extends EloquentModel
