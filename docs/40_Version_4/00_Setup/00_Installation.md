@@ -5,7 +5,7 @@
 Require the package via composer and download the files: 
 
 ```
-composer require fenos/notifynder
+composer require fenos/notifynder:^4.0
 ```
 
 ### Config
