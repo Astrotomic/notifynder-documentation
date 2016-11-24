@@ -63,3 +63,6 @@ Notifynder::category('sayhello')
            ->extra(compact('period_day'))
            ->sendCustom();
 ```
+
+
+**Hint:** you are also able to override already existing senders to adjust the default behaviour. Just register them on the same name after the `NotifynderServiceProvider`.
