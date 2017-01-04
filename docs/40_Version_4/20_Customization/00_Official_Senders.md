@@ -47,3 +47,16 @@ Notifynder::category('sayhello')
            ->to(2)
            ->sendMessageBirdVoice();
 ```
+
+### Redis Sender
+
+[Repository](https://github.com/Astrotomic/notifynder-sender-redis) | [Redis PubSub](https://laravel.com/docs/5.1/redis#pubsub)
+
+With this one you can send notifications as json array message via redis as live messages.
+
+```php
+Notifynder::category('sayhello')
+           ->from(1)
+           ->to(2)
+           ->sendRedis();
+```
