@@ -2,7 +2,7 @@
 
 We have created some custom senders for typical use-cases, these senders are official supported by us and come with the same flexibility like the core-package itself.
 
-If you want any other sender or want to provide written code for one please [create an issue](https://github.com/fenos/Notifynder/issues/new) in the core-package. If you have any questions or feature-wishes for an existing one you can create an issue in the sender-repo.
+If you want any other sender or want to provide written code for one please [create an issue](https://github.com/fenos/Notifynder/issues/new?milestone=Senders) in the core-package. If you have any questions or feature-wishes for an existing one you can create an issue in the sender-repo.
 
 ### E-Mail Sender
 
