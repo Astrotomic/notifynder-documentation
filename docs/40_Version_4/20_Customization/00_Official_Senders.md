@@ -45,7 +45,7 @@ Notifynder::category('sayhello')
 Notifynder::category('sayhello')
            ->from(1)
            ->to(2)
-           ->sendMessageBirdVoice();
+           ->sendMessageBirdCall();
 ```
 
 ### Redis Sender
@@ -59,4 +59,17 @@ Notifynder::category('sayhello')
            ->from(1)
            ->to(2)
            ->sendRedis();
+```
+
+### Twilio Sender
+
+[Repository](https://github.com/Astrotomic/notifynder-sender-twilio) | [Twilio](https://www.twilio.com/docs/)
+
+With this one you can send notifications as SMS message via Twilio.
+
+```php
+Notifynder::category('sayhello')
+           ->from(1)
+           ->to(2)
+           ->sendTwilio();
 ```
