@@ -87,6 +87,7 @@ Notifynder::category('sayhello')
 
 [![Release](https://img.shields.io/github/release/astrotomic/notifynder-sender-nexmo.svg?style=flat-square)](https://github.com/astrotomic/notifynder-sender-nexmo/releases)
 [![Issues](https://img.shields.io/github/issues/astrotomic/notifynder-sender-nexmo.svg?style=flat-square)](https://github.com/astrotomic/notifynder-sender-nexmo/issues)
+[![Travis branch](https://img.shields.io/travis/Astrotomic/notifynder-sender-nexmo/master.svg?style=flat-square)](https://travis-ci.org/Astrotomic/notifynder-sender-nexmo/branches)
 [![Docs](https://img.shields.io/badge/Docs-Nexmo-lightgrey.svg?style=flat-square)](https://docs.nexmo.com/)
 
 With this one you can send notifications as SMS message via Nexmo.
