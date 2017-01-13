@@ -6,7 +6,8 @@ If you want any other sender or want to provide written code for one please [cre
 
 ### E-Mail Sender
 
-[Repository](https://github.com/Astrotomic/notifynder-sender-email)
+[![Release](https://img.shields.io/github/release/astrotomic/notifynder-sender-email.svg?style=flat-square)](https://github.com/astrotomic/notifynder-sender-email/releases)
+[![Issues](https://img.shields.io/github/issues/astrotomic/notifynder-sender-email.svg?style=flat-square)](https://github.com/astrotomic/notifynder-sender-email/issues)
 
 With this one you can send notifications as text message via E-Mail.
 
@@ -19,7 +20,9 @@ Notifynder::category('sayhello')
 
 ### Slack Sender
 
-[Repository](https://github.com/Astrotomic/notifynder-sender-slack) | [Slack](https://slack.com/developers)
+[![Release](https://img.shields.io/github/release/astrotomic/notifynder-sender-slack.svg?style=flat-square)](https://github.com/astrotomic/notifynder-sender-slack/releases)
+[![Issues](https://img.shields.io/github/issues/astrotomic/notifynder-sender-slack.svg?style=flat-square)](https://github.com/astrotomic/notifynder-sender-slack/issues)
+[![Docs](https://img.shields.io/badge/Docs-Slack-lightgrey.svg?style=flat-square)](https://slack.com/developers)
 
 With this one you can send notifications as text message via Slack.
 
@@ -32,7 +35,9 @@ Notifynder::category('sayhello')
 
 ### MessageBird Sender
 
-[Repository](https://github.com/Astrotomic/notifynder-sender-messagebird) | [MessageBird](https://developers.messagebird.com)
+[![Release](https://img.shields.io/github/release/astrotomic/notifynder-sender-messagebird.svg?style=flat-square)](https://github.com/astrotomic/notifynder-sender-messagebird/releases)
+[![Issues](https://img.shields.io/github/issues/astrotomic/notifynder-sender-messagebird.svg?style=flat-square)](https://github.com/astrotomic/notifynder-sender-messagebird/issues)
+[![Docs](https://img.shields.io/badge/Docs-MessageBird-lightgrey.svg?style=flat-square)](https://developers.messagebird.com)
 
 With this one you can send notifications as SMS or Voice message via MessageBird.
 
@@ -50,7 +55,9 @@ Notifynder::category('sayhello')
 
 ### Redis Sender
 
-[Repository](https://github.com/Astrotomic/notifynder-sender-redis) | [Redis PubSub](https://laravel.com/docs/5.1/redis#pubsub)
+[![Release](https://img.shields.io/github/release/astrotomic/notifynder-sender-redis.svg?style=flat-square)](https://github.com/astrotomic/notifynder-sender-redis/releases)
+[![Issues](https://img.shields.io/github/issues/astrotomic/notifynder-sender-redis.svg?style=flat-square)](https://github.com/astrotomic/notifynder-sender-redis/issues)
+[![Docs](https://img.shields.io/badge/Docs-Redis-lightgrey.svg?style=flat-square)](https://laravel.com/docs/5.1/redis#pubsub)
 
 With this one you can send notifications as json array message via redis as live messages.
 
@@ -63,7 +70,9 @@ Notifynder::category('sayhello')
 
 ### Twilio Sender
 
-[Repository](https://github.com/Astrotomic/notifynder-sender-twilio) | [Twilio](https://www.twilio.com/docs/)
+[![Release](https://img.shields.io/github/release/astrotomic/notifynder-sender-twilio.svg?style=flat-square)](https://github.com/astrotomic/notifynder-sender-twilio/releases)
+[![Issues](https://img.shields.io/github/issues/astrotomic/notifynder-sender-twilio.svg?style=flat-square)](https://github.com/astrotomic/notifynder-sender-twilio/issues)
+[![Docs](https://img.shields.io/badge/Docs-Twilio-lightgrey.svg?style=flat-square)](https://www.twilio.com/docs/)
 
 With this one you can send notifications as SMS message via Twilio.
 
@@ -72,4 +81,19 @@ Notifynder::category('sayhello')
            ->from(1)
            ->to(2)
            ->sendTwilio();
+```
+
+### Nexmo Sender
+
+[![Release](https://img.shields.io/github/release/astrotomic/notifynder-sender-nexmo.svg?style=flat-square)](https://github.com/astrotomic/notifynder-sender-nexmo/releases)
+[![Issues](https://img.shields.io/github/issues/astrotomic/notifynder-sender-nexmo.svg?style=flat-square)](https://github.com/astrotomic/notifynder-sender-nexmo/issues)
+[![Docs](https://img.shields.io/badge/Docs-Nexmo-lightgrey.svg?style=flat-square)](https://docs.nexmo.com/)
+
+With this one you can send notifications as SMS message via Nexmo.
+
+```php
+Notifynder::category('sayhello')
+           ->from(1)
+           ->to(2)
+           ->sendNexmo();
 ```
