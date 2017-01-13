@@ -16,10 +16,8 @@
         "float": false,
 
         "links": {
-            "Demo": "http://demo.notifynder.info",
             "Repository": "https://github.com/fenos/Notifynder",
             "Issues": "https://github.com/fenos/Notifynder/issues",
-            "Travis CI": "https://travis-ci.org/fenos/Notifynder",
             "Slack": "https://notifynder.signup.team"
         }
     }
