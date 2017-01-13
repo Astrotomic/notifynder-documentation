@@ -23,7 +23,7 @@
 
     <hr/>
 
-    <p>If you have something to add pls make a PR in the docu repo: <a href="https://github.com/Notifynder/documentation">https://github.com/Notifynder/documentation</a></p>
+    <p>If you have something to add pls make a PR in the documentation repository: <a href="https://github.com/Astrotomic/notifynder-documentation">https://github.com/Astrotomic/notifynder-documentation</a></p>
 
     <?php if(!empty($page['prev']) || !empty($page['next'])) { ?>
     <nav>

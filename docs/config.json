@@ -18,7 +18,8 @@
         "links": {
             "Repository": "https://github.com/fenos/Notifynder",
             "Issues": "https://github.com/fenos/Notifynder/issues",
-            "Slack": "https://notifynder.signup.team"
+            "Slack": "https://notifynder.signup.team",
+            "Astrotomic": "https://github.com/Astrotomic"
         }
     }
 }
