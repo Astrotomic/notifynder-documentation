@@ -42,5 +42,7 @@ Notifynder just needs basic things and is compatible with most current versions.
 **Laravel**
 <br/>
 *v5.0*, *v5.1*, *v5.2*, *v5.3*, *v5.4*
+<br/>
+**experimental:** *dev-master*
   </div>
 </div>
